@@ -22,8 +22,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import aliSrc from "@/assets/ali.png";
-import schoolSrc from "@/assets/school.png";
+import aliSrc from "@/assets/ali.webp";
+import schoolSrc from "@/assets/school.webp";
 
 type Language = "ar" | "en";
 
