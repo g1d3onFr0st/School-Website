@@ -8,14 +8,14 @@ export default defineConfig({
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
-    tailwindcss(),
+    tailwindcss()
   ],
-  base: "/Ali-s-Website/",
+  base: "/School-Website/",
   server: {
     port: 2010,
-    open: true,
+    open: true
   },
   resolve: {
-    tsconfigPaths: true,
-  },
+    tsconfigPaths: true
+  }
 });
