@@ -14,7 +14,7 @@ import {
   TrendingUp,
   Users,
   Moon,
-  Sun,
+  Sun
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import aliSrc from "@/assets/ali.webp";
 import schoolSrc from "@/assets/school.webp";
 
 type Language = "ar" | "en";
@@ -35,78 +34,78 @@ const translations = {
 
     nav: {
       home: "الرئيسية",
-      about: "لماذا علي؟",
+      about: "لماذا عبدالمهيمن؟",
       achievements: "إنجازاتي",
-      vision: "رؤيتي",
+      vision: "رؤيتي"
     },
 
     hero: {
-      firstName: "علي",
-      restName: "سامر صباح",
+      firstName: "عبدالمهيمن",
+      restName: "أوس كمال",
       slogan: "معاً نبني التغيير، ونصنع مستقبلاً أفضل",
       vote: "صوتك يصنع الفرق",
       subline: "اختيارك اليوم يصنع مستقبل مدرستنا غداً",
-      discover: "تعرف على برنامجي",
+      discover: "تعرف على برنامجي"
     },
 
     why: {
-      eyebrow: "لماذا علي؟",
+      eyebrow: "لماذا عبدالمهيمن؟",
       title: "أربع سنوات من العمل، التفوق، والثقة",
       description:
-        "لا أعدكم بكلمات كبيرة. أريد أن أمثلكم كما يجب: أستمع إليكم، أنقل أفكاركم، وأعمل معكم من أجل مدرسة أفضل للجميع.",
+        "لا أعدكم بكلمات كبيرة. أريد أن أمثلكم كما يجب: أستمع إليكم، أنقل أفكاركم، وأعمل معكم من أجل مدرسة أفضل للجميع."
     },
 
     achievements: [
       {
         title: "4 سنوات من التميز الدراسي",
-        text: "درجات متميزة وتفوق دراسي مستمر طوال أربع سنوات.",
+        text: "درجات متميزة وتفوق دراسي مستمر طوال أربع سنوات."
       },
       {
         title: "المشاركة في 5 فعاليات مدرسية",
-        text: "من بينها المعرض السنوي للحاسوب والفعاليات المدرسية المختلفة.",
+        text: "من بينها المعرض السنوي للحاسوب والفعاليات المدرسية المختلفة."
       },
       {
         title: "تواصل ممتاز مع الكادر التدريسي",
-        text: "احترام متبادل، تعاون دائم، وعلاقة جيدة مع أساتذتنا.",
+        text: "احترام متبادل، تعاون دائم، وعلاقة جيدة مع أساتذتنا."
       },
       {
         title: "علاقة جيدة مع جميع الطلبة",
-        text: "الاحترام والصداقة والتعاون مع الزملاء أساس العمل الحقيقي.",
+        text: "الاحترام والصداقة والتعاون مع الزملاء أساس العمل الحقيقي."
       },
       {
         title: "الالتزام والمسؤولية",
-        text: "الالتزام بالقيم المدرسية، الانضباط، وتحمل مسؤولية ما أتعهد به.",
-      },
+        text: "الالتزام بالقيم المدرسية، الانضباط، وتحمل مسؤولية ما أتعهد به."
+      }
     ],
 
     vision: {
       eyebrow: "رؤيتي لخدمتكم",
       title: "برلمان يسمع الطالب قبل أن يتحدث باسمه",
       description:
-        "هدفي ليس مجرد الفوز بالانتخابات، بل بناء قناة حقيقية بين الطلبة والمدرسة وتحويل الأفكار الجيدة إلى مبادرات قابلة للتنفيذ.",
+        "هدفي ليس مجرد الفوز بالانتخابات، بل بناء قناة حقيقية بين الطلبة والمدرسة وتحويل الأفكار الجيدة إلى مبادرات قابلة للتنفيذ."
     },
 
     visionItems: [
       {
         title: "إيصال صوت الطلبة",
-        text: "نقل مقترحاتكم ومشكلاتكم بأمانة ومسؤولية.",
+        text: "نقل مقترحاتكم ومشكلاتكم بأمانة ومسؤولية."
       },
       {
         title: "ابتكار مبادرات",
-        text: "أفكار وأنشطة جديدة تخدم الطلبة وتنمي مهاراتهم.",
+        text: "أفكار وأنشطة جديدة تخدم الطلبة وتنمي مهاراتهم."
       },
       {
         title: "تعزيز التعاون",
-        text: "تقوية التعاون بين الطلبة والإدارة والكادر التدريسي.",
+        text: "تقوية التعاون بين الطلبة والإدارة والكادر التدريسي."
       },
       {
         title: "العمل بروح الفريق",
-        text: "لأن المدرسة الأفضل لا يبنيها شخص واحد، بل نبنيها جميعاً.",
+        text: "لأن المدرسة الأفضل لا يبنيها شخص واحد، بل نبنيها جميعاً."
       },
       {
         title: "الشفافية والثقة",
-        text: "الصدق في العمل والوضوح فيما يمكن وما لا يمكن تحقيقه.",
-      },
+        text: "الصدق في العمل والوضوح فيما يمكن وما لا يمكن تحقيقه."
+      }
     ],
 
     quote: "أستمع لكم، أمثلكم، وأعمل معكم.",
@@ -114,9 +113,9 @@ const translations = {
     finalGold: "واختيارك يصنع الفرق",
     finalText:
       "معاً نستطيع أن نجعل البرلمان المدرسي مساحة حقيقية لأفكار الطلبة وطموحاتهم.",
-    footer: "علي سامر صباح — مرشح البرلمان المدرسي",
+    footer: "عبدالمهيمن أوس كمال — مرشح البرلمان المدرسي",
     rights: "معاً نحو مدرسة أفضل",
-    language: "English",
+    language: "English"
   },
 
   en: {
@@ -126,78 +125,78 @@ const translations = {
 
     nav: {
       home: "Home",
-      about: "Why Ali?",
+      about: "Why Abdulmuhaimin?",
       achievements: "Achievements",
-      vision: "Vision",
+      vision: "Vision"
     },
 
     hero: {
-      firstName: "Ali",
-      restName: "Samer Sabah",
+      firstName: "Abdulmuhaimin",
+      restName: "Wael kammal",
       slogan: "Together, we build change and create a better future.",
       vote: "Your voice makes the difference",
       subline: "The choice you make today shapes our school's tomorrow.",
-      discover: "Discover my program",
+      discover: "Discover my program"
     },
 
     why: {
-      eyebrow: "Why Ali?",
+      eyebrow: "Why Abdulmuhaimin?",
       title: "Four years of achievement, work, and trust",
       description:
-        "I am not here to make grand promises. I want to represent you properly: to listen, carry your ideas forward, and work with you for a better school.",
+        "I am not here to make grand promises. I want to represent you properly: to listen, carry your ideas forward, and work with you for a better school."
     },
 
     achievements: [
       {
         title: "4 years of academic excellence",
-        text: "Consistently distinguished grades and strong academic performance.",
+        text: "Consistently distinguished grades and strong academic performance."
       },
       {
         title: "5 school activities",
-        text: "Including the annual computer exhibition and other school events.",
+        text: "Including the annual computer exhibition and other school events."
       },
       {
         title: "Strong communication with teachers",
-        text: "Mutual respect, continuous cooperation, and positive relationships with our teachers.",
+        text: "Mutual respect, continuous cooperation, and positive relationships with our teachers."
       },
       {
         title: "Good relationships with students",
-        text: "Respect, friendship, and cooperation with students across our school.",
+        text: "Respect, friendship, and cooperation with students across our school."
       },
       {
         title: "Discipline and responsibility",
-        text: "Commitment to school values and responsibility for every promise I make.",
-      },
+        text: "Commitment to school values and responsibility for every promise I make."
+      }
     ],
 
     vision: {
       eyebrow: "My Vision",
       title: "A parliament that listens before it speaks for students",
       description:
-        "My goal is not simply to win an election. It is to build a real channel between students and the school and turn worthwhile ideas into achievable initiatives.",
+        "My goal is not simply to win an election. It is to build a real channel between students and the school and turn worthwhile ideas into achievable initiatives."
     },
 
     visionItems: [
       {
         title: "Represent your voice",
-        text: "Carry your suggestions and concerns honestly and responsibly.",
+        text: "Carry your suggestions and concerns honestly and responsibly."
       },
       {
         title: "Create initiatives",
-        text: "Develop activities and ideas that serve students and their skills.",
+        text: "Develop activities and ideas that serve students and their skills."
       },
       {
         title: "Strengthen cooperation",
-        text: "Build stronger cooperation between students, administration, and teachers.",
+        text: "Build stronger cooperation between students, administration, and teachers."
       },
       {
         title: "Work as a team",
-        text: "A better school is not built by one person. We build it together.",
+        text: "A better school is not built by one person. We build it together."
       },
       {
         title: "Transparency and trust",
-        text: "Be clear about our work and honest about what can and cannot be achieved.",
-      },
+        text: "Be clear about our work and honest about what can and cannot be achieved."
+      }
     ],
 
     quote: "I listen to you. I represent you. I work with you.",
@@ -205,10 +204,10 @@ const translations = {
     finalGold: "Your choice makes the difference.",
     finalText:
       "Together, we can make our school parliament a genuine platform for students' ideas and ambitions.",
-    footer: "Ali Samer Sabah — School Parliament Candidate",
+    footer: "Abdulmuhaimin Wael kammal — School Parliament Candidate",
     rights: "Together for a better school",
-    language: "العربية",
-  },
+    language: "العربية"
+  }
 } as const;
 
 const achievementIcons = [GraduationCap, CalendarDays, Handshake, Users, Award];
@@ -217,10 +216,10 @@ const visionIcons = [Megaphone, Lightbulb, Handshake, TrendingUp, ShieldCheck];
 
 export default function CampaignPage() {
   const [language, setLanguage] = useState<Language>(
-    (localStorage.getItem("language") as Language) || "ar",
+    (localStorage.getItem("language") as Language) || "ar"
   );
   const [theme, setTheme] = useState<"dark" | "light">(
-    (localStorage.getItem("theme") as "dark" | "light") || "light",
+    (localStorage.getItem("theme") as "dark" | "light") || "light"
   );
   useEffect(() => {
     localStorage.setItem("language", language);
@@ -238,7 +237,7 @@ export default function CampaignPage() {
     ["#home", t.nav.home],
     ["#about", t.nav.about],
     ["#achievements", t.nav.achievements],
-    ["#vision", t.nav.vision],
+    ["#vision", t.nav.vision]
   ];
 
   // return (
@@ -370,8 +369,8 @@ export default function CampaignPage() {
   //           <div className="absolute bottom-10 size-[420px] rounded-full bg-[#bf8735]/80 max-md:size-[280px]" />
 
   //           <img
-  //             src="/ali.png"
-  //             alt="Ali Samer Sabah"
+  //             src="/Abdulmuhaimin.png"
+  //             alt="Abdulmuhaimin Wael kammal"
   //             className="relative scale-90 z-10 max-h-[760px] w-auto object-contain "
   //           />
 
@@ -422,7 +421,7 @@ export default function CampaignPage() {
   //       </div>
   //     </section>
 
-  //     {/* WHY ALI */}
+  //     {/* WHY Abdulmuhaimin */}
   //     <section
   //       id="about"
   //       className="relative py-28"
@@ -705,7 +704,7 @@ export default function CampaignPage() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-[0.055] grayscale"
           style={{
-            backgroundImage: `url(${schoolSrc})`,
+            backgroundImage: `url(${schoolSrc})`
           }}
         />
 
@@ -718,24 +717,6 @@ export default function CampaignPage() {
         <div className="absolute right-[-180px] top-[18%] size-[500px] rounded-full border-[80px] border-[var(--campaign-border)] opacity-[0.08]" />
 
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-          {/* Candidate image */}
-          <div className="relative order-2 flex justify-center lg:order-1">
-            <div className="absolute bottom-10 size-[420px] rounded-full bg-[var(--campaign-gold)] opacity-80 max-md:size-[280px]" />
-
-            <img
-              src={aliSrc}
-              alt="Ali Samer Sabah"
-              className="relative scale-90 z-10 max-h-[760px] w-auto object-contain "
-            />
-
-            <div className="absolute bottom-5 z-20 bg-[var(--campaign-navy)] px-8 py-4 text-[var(--campaign-on-navy)] shadow-xl">
-              <p className="text-sm text-[var(--campaign-gold-light)]">
-                {t.hero.vote}
-              </p>
-              <p className="mt-1 font-semibold">{t.hero.subline}</p>
-            </div>
-          </div>
-
           {/* Hero copy */}
           <div className="relative order-1 z-10 lg:order-2">
             <Badge className="mb-6 rounded-none bg-[var(--campaign-navy)] px-5 py-2 text-sm text-[var(--campaign-gold-light)] hover:bg-[var(--campaign-navy)]">
@@ -743,7 +724,7 @@ export default function CampaignPage() {
             </Badge>
 
             <h1 className="leading-[0.9]">
-              <span className="block text-[clamp(5rem,12vw,10rem)] font-black tracking-tight text-[var(--campaign-foreground)]">
+              <span className="block text-[clamp(2rem,10vw,7rem)] font-black tracking-tight text-[var(--campaign-foreground)]">
                 {t.hero.firstName}
               </span>
 
@@ -777,7 +758,7 @@ export default function CampaignPage() {
         </div>
       </section>
 
-      {/* WHY ALI */}
+      {/* WHY Abdulmuhaimin */}
       <section
         id="about"
         className="relative py-28"
