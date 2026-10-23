@@ -41,7 +41,7 @@ const translations = {
 
     hero: {
       firstName: "عبدالمهيمن",
-      restName: "أوس كمال",
+      restName: "أوس وائل",
       slogan: "معاً نبني التغيير، ونصنع مستقبلاً أفضل",
       vote: "صوتك يصنع الفرق",
       subline: "اختيارك اليوم يصنع مستقبل مدرستنا غداً",
@@ -113,7 +113,7 @@ const translations = {
     finalGold: "واختيارك يصنع الفرق",
     finalText:
       "معاً نستطيع أن نجعل البرلمان المدرسي مساحة حقيقية لأفكار الطلبة وطموحاتهم.",
-    footer: "عبدالمهيمن أوس كمال — مرشح البرلمان المدرسي",
+    footer: "عبدالمهيمن أوس وائل — مرشح البرلمان المدرسي",
     rights: "معاً نحو مدرسة أفضل",
     language: "English"
   },
@@ -132,7 +132,7 @@ const translations = {
 
     hero: {
       firstName: "Abdulmuhaimin",
-      restName: "Wael kammal",
+      restName: "Aous Wael",
       slogan: "Together, we build change and create a better future.",
       vote: "Your voice makes the difference",
       subline: "The choice you make today shapes our school's tomorrow.",
@@ -204,7 +204,7 @@ const translations = {
     finalGold: "Your choice makes the difference.",
     finalText:
       "Together, we can make our school parliament a genuine platform for students' ideas and ambitions.",
-    footer: "Abdulmuhaimin Wael kammal — School Parliament Candidate",
+    footer: "Abdulmuhaimin Aous Wael — School Parliament Candidate",
     rights: "Together for a better school",
     language: "العربية"
   }
